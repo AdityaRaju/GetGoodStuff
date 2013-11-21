@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Login Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style type='text/css'>
+    #getgoodstuff-wrapper{
+      margin:auto;
+      width:400px;
+      text-align:center;
+      line-height:normal;
+      position:static;
+    }
+    #getgoodstuff-wrapper .main {
+      border:1px solid #C3D4DB;
+    }
+    </style>
+  </head>
+  <body>
+   <div id='getgoodstuff-wrapper' style='display:block'>
+    <div class='header'>U gotta login to see good stuff!</div>
+      <div class='main'>
+        <div class='login' >
+          <br>
+          <div class='row'>
+            <span style='font-size: 14px; font-weight: normal'>Enter login credentials to save and search content in your account.<br><hr />If you're not signed up with getgoodstuff, please <a href='http://getgoodstuff.net/sign_up.php' target='_blank'>Sign up</a>!</span><br>
+          </div>
+          <div class='row'>
+            <span>Username</span>
+            <br />
+            <input type='text' id='getgoodstuff_username' />
+          </div>
+          <div class='row'>
+            <span>Password</span>
+            <br />
+            <input type='password' id='getgoodstuff_password' />
+          </div>
+          <div class='row' id='saved_info' style='display:none'>
+            <span style='color:blue;' >Saved Successfully..</span>
+          </div>
+          <a href='#' id='btnSaveLogin' class='getgoodstuff_button'>Save</a>
+        </div>
+      </div>
+   </div>
+    <script type="text/javascript" src="options.js"></script></form>
+  </body>
+</html>

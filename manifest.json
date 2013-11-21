@@ -1,0 +1,22 @@
+{
+  "name" : "GetGoodStuff",
+  "description" : "A content finder and rating system.",
+  "browser_action" : {
+    "default_icon" : "icons/icon19.png",
+    "default_title" : "GetGoodStuff"
+  },
+  "background" : {
+    "page" : "background.html"
+  },
+  "content_scripts" : [{
+      "matches" : ["http://*/*", "https://*/*"],
+      "css":["style.css"],
+      "js" : ["content.js"],
+      "all_frames": false
+    }
+  ],
+  "options_page" : "options.html",
+  "manifest_version" : 2,
+  "permissions" : ["contextMenus", "clipboardWrite", "unlimited_storage", "tabs", "http://*/*", "https://*/*", "cookies"],
+  "version" : "1.0"
+}
